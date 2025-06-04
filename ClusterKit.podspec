@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/hulab/ClusterKit.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/mapstr_app'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '13.0'
   s.requires_arc = true
   s.default_subspecs = 'Core'
   
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   # end
 
   s.subspec 'Mapbox' do |ss|
-    ss.platform = :ios, '9.0'
+    ss.platform = :ios, '13.0'
     ss.dependency 'ClusterKit/Core'
     ss.dependency 'Mapbox-iOS-SDK', '~> 5.0'
     ss.source_files = 'Sources/Mapbox'
